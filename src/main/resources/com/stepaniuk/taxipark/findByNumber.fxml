@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: darkgrey;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.stepaniuk.taxipark.Controllers.findControllers.FindByNumberController">
+   <children>
+      <AnchorPane layoutY="72.0" prefHeight="328.0" prefWidth="700.0" style="-fx-background-color: gray;">
+         <children>
+            <TextField fx:id="numberField" alignment="CENTER" layoutX="276.0" layoutY="235.0" prefHeight="30.0" promptText="Number" />
+            <Button fx:id="findCarButton" layoutX="290.0" layoutY="275.0" mnemonicParsing="false" onAction="#findCar" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: orange;" text="Find car">
+               <font>
+                  <Font name="Segoe UI Black Italic" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="560.0" layoutY="302.0" prefHeight="25.0" prefWidth="140.0" text="\@Taxipark, Volodymyr Stepaniuk inc. 2022">
+               <font>
+                  <Font size="7.0" />
+               </font>
+            </Label>
+            <Label layoutX="305.0" layoutY="2.0" text="Finded car">
+               <font>
+                  <Font name="Segoe UI Black Italic" size="16.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="foundedCarTextArea" editable="false" layoutX="229.0" layoutY="27.0" prefHeight="200.0" prefWidth="242.0" />
+         </children></AnchorPane>
+      <Label layoutX="283.0" layoutY="14.0" text="Taxi Park">
+         <font>
+            <Font name="Segoe UI Black Italic" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="233.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/TaxiLogo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="goToMenuButton" layoutX="560.0" layoutY="19.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: orange;" text="Go to Menu">
+         <font>
+            <Font name="Segoe UI Black Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
