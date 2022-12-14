@@ -10,9 +10,7 @@ module com.stepaniuk.taxipark {
     exports com.stepaniuk.taxipark;
     exports com.stepaniuk.taxipark.Controllers;
     opens com.stepaniuk.taxipark.Controllers to javafx.fxml;
-    exports com.stepaniuk.taxipark.Controllers.TipsControllers;
     exports com.stepaniuk.taxipark.Database;
-    opens com.stepaniuk.taxipark.Controllers.TipsControllers to javafx.fxml;
     exports com.stepaniuk.taxipark.Controllers.Universal;
     opens com.stepaniuk.taxipark.Controllers.Universal to javafx.fxml;
     exports com.stepaniuk.taxipark.Controllers.findControllers;

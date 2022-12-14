@@ -3,7 +3,6 @@ package com.stepaniuk.taxipark.Controllers;
 import com.stepaniuk.taxipark.API.LogClass;
 import com.stepaniuk.taxipark.API.Validator;
 import com.stepaniuk.taxipark.Car.*;
-import com.stepaniuk.taxipark.Controllers.TipsControllers.RefusalMenuController;
 import com.stepaniuk.taxipark.Database.CarsConst;
 import com.stepaniuk.taxipark.Database.DBCommands;
 import javafx.event.ActionEvent;
@@ -11,7 +10,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
